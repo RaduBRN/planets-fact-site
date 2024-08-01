@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/responsive-planet-fact-site-using-next-tailwind-and-framer-motion-ZpVJle_4wn)
-- [Live Site URL](https://spectacular-speculoos-50b1e0.netlify.app)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-planet-fact-site-using-next-tailwind-and-framer-motion-ZpVJle_4wn)
+- Live Site URL: [netlify.com](https://spectacular-speculoos-50b1e0.netlify.app)
 
 ### Built with
 
