@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply text-[40px] md:text-[48px] lg:text-[80px] leading-[103px] font-antonio font-medium;
+  }
+  h2 {
+    @apply text-[20px] md:text-[24px] lg:text-[40px] lg:leading-[52px] font-antonio tracking-[-0.75px] md:tracking-[-0.9px] lg:tracking-[-1.5px] font-medium;
+  }
+  h3 {
+    @apply text-[12px] leading-[25px] tracking-[2.6px] font-bold;
+  }
+  h4 {
+    @apply text-[8px] lg:text-[11px] leading-[16px] lg:leading-[25px] tracking-[0.73px] lg:tracking-[1px] font-bold;
+  }
+  p {
+    @apply text-[11px] lg:text-[14px] leading-[22px] lg:leading-[25px];
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .font-antonio {
+    font-family: var(--font-antonio);
+  }
+  .font-spartan {
+    font-family: var(--font-spartan);
+  }
+  .default-btn {
+    @apply border border-white/20 text-left px-4 py-2 text-white bg-darkblue;
   }
 }
